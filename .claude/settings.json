@@ -7,7 +7,18 @@
       "Bash(curl -s -o /dev/null -w \"TXT: %{http_code}\\\\n\" \"http://localhost:3000/api/export?type=blog&slug=%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0&format=txt\")",
       "Bash(curl -s -o /dev/null -w \"DOCX: %{http_code}\\\\n\" \"http://localhost:3000/api/export?type=blog&slug=%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0&format=docx\")",
       "Bash(npx vercel *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(npm i *)",
+      "Bash(vercel --prod --yes)",
+      "Bash(vercel login *)",
+      "Bash(curl -s -o /dev/null -w \"Home: %{http_code}\\\\n\" https://userblog-ten.vercel.app)",
+      "Bash(curl -s -o /dev/null -w \"Blog: %{http_code}\\\\n\" \"https://userblog-ten.vercel.app/blog\")",
+      "Bash(curl -s -o /dev/null -w \"Sitemap: %{http_code}\\\\n\" https://userblog-ten.vercel.app/sitemap.xml)",
+      "Bash(curl -s -o /dev/null -w \"RSS: %{http_code}\\\\n\" https://userblog-ten.vercel.app/feed.xml)",
+      "Bash(curl -s -o /dev/null -w \"Search: %{http_code}\\\\n\" https://userblog-ten.vercel.app/search)",
+      "Bash(curl -s -o /dev/null -w \"Home: %{http_code}\\\\n\" https://userblog-ten.vercel.app --connect-timeout 15)",
+      "WebFetch(domain:userblog-ten.vercel.app)"
     ]
   }
 }
