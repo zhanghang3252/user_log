@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e ' *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" --path-as-is \"http://localhost:3000/blog/第一篇文章\")",
+      "Bash(curl -s -o /dev/null -w \"MD: %{http_code}\\\\n\" \"http://localhost:3000/api/export?type=blog&slug=%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0&format=md\")",
+      "Bash(curl -s -o /dev/null -w \"TXT: %{http_code}\\\\n\" \"http://localhost:3000/api/export?type=blog&slug=%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0&format=txt\")",
+      "Bash(curl -s -o /dev/null -w \"DOCX: %{http_code}\\\\n\" \"http://localhost:3000/api/export?type=blog&slug=%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0&format=docx\")",
+      "Bash(npx vercel *)",
+      "Bash(git add *)"
+    ]
+  }
+}
